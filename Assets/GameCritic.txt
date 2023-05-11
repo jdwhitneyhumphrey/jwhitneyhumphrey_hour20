@@ -1,9 +1,14 @@
 Is the Game Easy or Hard?
+Too easy, the reasons go as follows, the obstacles are too slow and therefore easy to dodge, the game is a usual runner, and also the power ups add a bit too much time
 
 What could be done to make it Easier or Harder?
+Game needs more obstacles/challenges, too dull.
 
 3 things that give a "wow" factor.
+Obstacles appear random positions on map, less powerup, longer game.
 
 Parts that are fun
+It is fun to catch powerups, and is fun to navigate between obstacles, it is also fun to aim for high-scores.
 
 Parts that are tedious
+Powerups move too fast, Player moves too slow, and Obstacles move too slow.

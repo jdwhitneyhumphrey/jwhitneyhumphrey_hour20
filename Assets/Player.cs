@@ -4,15 +4,27 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [Header("Refrences")]
+    public GameManager manager;
+    public Material normalMat;
+    public Material phasedMat;
+
+    [Header("Gameplay")]
+    public float bounds = 3f;
+    public float strafeSpeed = 4f;
+    public float phaseCooldown = 2f;
+
+    Renderer mesh;
+    Collider collision;
+    bool canPhase = true;
+
     void Start()
     {
-        
+        mesh = GetComponentInChildren<SkinnedMeshrenderer>();
+        collision = GetComponent<Collider>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
-    }
+        float xMove = Input.GetAxis("Horizontal") * Time.deltaTime * strafeSpeed;
 }
