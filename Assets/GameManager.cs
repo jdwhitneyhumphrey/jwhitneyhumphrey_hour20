@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         if (isGameOver)
-            return;
+             return;
 
         totalTimeElapsed += Time.deltaTime;
         gameTime -= Time.deltaTime;
@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
         //Then slow the world down for 1 second
         CancelInvoke();
         Time.timeScale = 0.5f;
-        invoke("SpeedWorldUp", 1);
+        Invoke("SpeedWorldUp", 1);
     }
 
     void SpeedWorldUp()
@@ -46,19 +46,19 @@ public class GameManager : MonoBehaviour
     void OnGUI()
 
     {
-        if (isGameOver)
+        if (!isGameOver)
         {
-            Rect boxRect = new Rect(Screen.width / 2 - 50, Screen.Height - 100, 100, 50);
-            OnGUI.Box(boxRect, "Time Remaining");
+            Rect boxRect = new Rect(Screen.width / 2 - 50, Screen.height - 100, 100, 50);
+            GUI.Box(boxRect, "Time Remaining");
 
             Rect labelRect = new Rect(Screen.width / 2 - 10, Screen.height / 2 - 80, 90, 40);
-            OnGUI().Label(labelRect. ((int)gameTime).ToString());
+            GUI.Label(labelRect, ((int)gameTime).ToString());
         }
 
         else
         {
             Rect boxRect = new Rect(Screen.width / 2 - 60, Screen.height / 2 - 100, 120, 50);
-            OnGUI.Box(boxRect, "Game Over");
+            GUI.Box(boxRect, "Game Over");
             Rect labelRect = new Rect(Screen.width / 2 - 55, Screen.height / 2 - 80, 90, 40);
             GUI.Label(labelRect, "Total Time: " + (int)totalTimeElapsed);
 

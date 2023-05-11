@@ -20,7 +20,7 @@ public class Player : MonoBehaviour
 
     void Start()
     {
-        mesh = GetComponentInChildren<SkinnedMeshrenderer>();
+        mesh = GetComponentInChildren<SkinnedMeshRenderer>();
         collision = GetComponent<Collider>();
     }
 
@@ -46,6 +46,6 @@ public class Player : MonoBehaviour
     {
         canPhase = true;
         mesh.material = normalMat;
-        collision.enable = true;
+        collision.enabled = true;
     }
 }

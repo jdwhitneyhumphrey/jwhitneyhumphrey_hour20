@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 159545596486425444}
   - component: {fileID: 1044481011305916364}
   - component: {fileID: 1264159689061027300}
+  - component: {fileID: -8291726401506236393}
   m_Layer: 0
   m_Name: Powerup
   m_TagString: Untagged
@@ -4949,3 +4950,18 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &-8291726401506236393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129623323088686076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ba2e70f2e3402b4dbae0a50cb290ae1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+  moveSpeed: 20
+  timeAmount: 1.5
