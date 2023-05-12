@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7387315560906133324}
   - component: {fileID: 2815496946813614899}
   - component: {fileID: 6954123702469626358}
-  - component: {fileID: -5093453557303547086}
+  - component: {fileID: -6146460071765167100}
   m_Layer: 0
   m_Name: Obstacle
   m_TagString: Untagged
@@ -176,7 +176,7 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &-5093453557303547086
+--- !u!114 &-6146460071765167100
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -190,4 +190,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   manager: {fileID: 0}
   moveSpeed: 20
-  timeAmount: 1.5
+  timeAmount: -0.5
